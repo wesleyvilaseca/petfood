@@ -1,5 +1,7 @@
 import Header from "../../components/header";
-import './styles.css';
+import './style.css';
+
+import Product from "../../components/product/list";
 
 const Checkout = () => {
     return (
@@ -48,8 +50,27 @@ const Checkout = () => {
                                 <input type="text" placeholder="CVV" className="pl-0 form-control form-control-lg" />
                             </div>
                         </div>
+
+                        <div className="row mt-4">
+                            <div className="col-12 d-flex justify-content-between align-items-center">
+                                <b>Total</b>
+                                <h3>R$ 30,00</h3>
+                            </div>
+                            <div className="col-12 mt-3 d-grid">
+                                <button className="btn btn-lg btn-primary"> Finalizar Compra</button>
+                            </div>
+                        </div>
                     </div>
-                    <div className="col-6"></div>
+                    <div className="col-6">
+                        <div className="box col mb-4 box-sidebar">
+                            <h4>Minha Sacola (5) </h4>
+                            <div className="row products">
+                                {[1, 2, 3, 4, 5].map((p) => (
+                                    <Product />
+                                ))}
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
