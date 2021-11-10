@@ -1,4 +1,5 @@
 import Header from '../../components/header';
+import Product from '../../components/product/card';
 import './style.css';
 
 const Store = () => {
@@ -25,7 +26,17 @@ const Store = () => {
                         <label className="badge bg-dark">Frete Grátis</label>
                     </div>
                     <div className="col-10">
-
+                        <h5>Produtos</h5>
+                        <div className="row">
+                            <Product />
+                            <Product />
+                            <Product />
+                            <Product />
+                            <Product />
+                            <Product />
+                            <Product />
+                            <Product />
+                        </div>
                     </div>
                 </div>
             </div>
