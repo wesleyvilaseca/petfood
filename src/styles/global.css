@@ -64,6 +64,10 @@ input[type="date"]:disabled {
     background-color: var(--secondary) !important;
 }
 
+.btn-secondary .rounded-circle{
+    padding: 6px 14px !important;
+}
+
 .box {
     position: relative;
     background: #fff;

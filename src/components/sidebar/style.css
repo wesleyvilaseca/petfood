@@ -1,0 +1,50 @@
+
+
+.nav-cart {
+    background-color: #f6f5f5;
+    width: 420px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: 850ms;
+    z-index: 9999;
+}
+
+.nav-cart.active {
+    right: 0;
+    transition: 350ms;
+}
+
+.nav-cart-toogle {
+    position: relative;
+    font-size: 1.3rem;
+    cursor: pointer;
+    float: left;
+    padding-top: -50px;
+    margin-top: -10px;
+}
+
+.sidebar h5 {
+    height: 30px;
+    margin-bottom: 0;
+}
+
+.sidebar .products {
+    height: calc(100% - 190px);
+    overflow: auto;
+    align-items: flex-start;
+}
+
+.sidebar .footer {
+    height: 150px;
+    background-color: #f6f5f5;
+}
+
+@media (max-width: 600px) {
+    .nav-cart {
+        width: 300px;
+    }
+}

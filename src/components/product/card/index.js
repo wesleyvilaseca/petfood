@@ -2,7 +2,7 @@ import './style.css';
 
 const Product = () => {
     return (
-        <div className="product col-md-3">
+        <div className="product col-sm-6 col-md-3 col-xl-3">
             <img src="https://images.tcdn.com.br/img/img_prod/699275/racao_ligeiro_adulto_carne_para_caes_de_todas_as_racas_4751_1_fa43070cf46f3cfec70d8066c0a07c60.jpg" className="img-fluid align-center" />
             {/* <button className="btn btn-primary rounded-circle"> + </button> */}
             <h4>

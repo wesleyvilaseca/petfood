@@ -5,7 +5,7 @@ const Cadastro = () => {
     return (
         <div className="container-fluid h-100 bg-primary">
             <div className="row">
-                <Header whiteVersion={true} />
+                <Header whiteVersion={true}  hideCart={true}/>
                 <div className="col-6 text-right my-auto">
                     <img src={illustration} class="img-fluid" />
                 </div>

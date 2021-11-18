@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Cadastro from './pages/cadastro';
 import Checkout from './pages/checkout';
+import Sidebar from './components/sidebar';
 import Store from './pages/store';
 import './styles/global.css';
 
@@ -9,6 +10,7 @@ ReactDOM.render(
   <React.StrictMode>
     {/* <Cadastro /> */}
     {/* <Checkout /> */}
+    <Sidebar />
     <Store />
   </React.StrictMode>,
   document.getElementById('root')
